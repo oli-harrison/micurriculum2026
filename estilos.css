@@ -1,0 +1,142 @@
+/* CSS DOCUMENT */
+@charset "utf-8";
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(fuentes/Poppins-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url(fuentes/Poppins-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins Italic";
+    src: url(fuentes/Poppins-Italic.ttf) format(truetype);
+    font-weight: italic;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins Light";
+    src: url(fuentes/Poppins-Light.ttf) format(truetype);
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Podkova regular";
+    src: url(fuentes/Podkova-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "Podkova", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    /*background-color: rgb(249, 240, 250);*/
+}
+
+body {
+    background-color: rgb(249, 240, 250);
+}
+
+/* aplicación al CV */
+
+/* inicio y portfolio */
+
+header {
+    nav {
+        text-align: right;
+        font-family: 'Podkova regular', serif;
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+        font-family: 'Poppins Regular', sans-serif;
+        color: rgb(219, 136, 211);
+    }
+}
+
+h1 {
+    font-family: 'Poppins Bold', sans-serif;
+    color: rgb(251, 176, 255);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins Regular', sans-serif;
+    color: rgb(150, 211, 143);
+    font-size: 1.6rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Poppins Italic', sans-serif;
+    color: rgb(88, 47, 82);
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+h4 {
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(219, 136, 211);
+    line-height: 1.3rem;
+}
+
+/* esto es para los textos */
+
+p {
+    font-family: 'Podkova regular', serif;
+    font-size: 0.9rem;
+    line-height: 1.15rem;
+    text-wrap-style: balance;
+}
+
+/* esto es de la lista del final */
+
+li {
+    line-height: 1rem;
+    font-family: 'Podkova regular', serif;
+    font-size: 0.9rem;
+}
+
+footer {
+    ul {
+        list-style: none;
+
+        a {
+            line-height: 2rem;
+        }
+
+    }
+}
+
+#hero {
+    background-image: url(img/fondo-compu.jpg);
+    background-position: 90%;
+    background-size: cover;
+}
+
+#degradado {
+    font-family: 'Poppins Italic', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(91deg, rgb(196 253 189), rgb(255 202 250 / 85%));
+}
+
+#pattern {
+    background-image: url(img/fondo-trama-verde.png);
+    background-size: 100px;
+}
