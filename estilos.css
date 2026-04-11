@@ -57,14 +57,15 @@ body {
 /* inicio y portfolio */
 
 header {
+    display: flex;
+    background-color: rgb(196 253 189 / 28%);
+    padding: 10px;
+    justify-content: center;
+
     nav {
         display: flex;
-        justify-content: flex-end;
-        text-align: right;
         font-family: 'Podkova regular', serif;
         font-size: 0.9rem;
-        padding-right: 10px;
-        padding-bottom: 10px;
         gap: 10px;
     }
 
@@ -74,9 +75,23 @@ header {
         color: rgb(219, 136, 211);
     }
 
-    img {
-        margin: 10px;
+    .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        max-width: 1200px;
     }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
 }
 
 h1 {
@@ -124,22 +139,29 @@ p {
     line-height: 1.15rem;
     text-wrap-style: balance;
     padding: 10px;
-    max-width: 425px;
+    max-width: 500px;
 }
 
 /* esto es de la lista del final */
 
 #habilidades {
-    ul {
-        line-height: 1rem;
-        font-family: 'Podkova regular', serif;
-        font-size: 0.9rem;
-        padding-left: 30px;
-    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
 
-    h2 {
-        text-align: left;
-        padding-left: 10px;
+        ul {
+            line-height: 1rem;
+            font-family: 'Podkova regular', serif;
+            font-size: 0.9rem;
+            padding-left: 30px;
+        }
+
+        h2 {
+            text-align: left;
+            padding-left: 10px;
+        }
     }
 }
 
@@ -156,7 +178,6 @@ footer {
 
         img {
             margin: 5px;
-            margin-left: 70px;
         }
 
         a {
@@ -168,6 +189,11 @@ footer {
         text-align: left;
     }
 
+    article {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -206,6 +232,7 @@ footer {
     min-height: 10vh;
     margin: 45px;
     border-radius: 100px;
+    max-width: 1200px;
 
 }
 
@@ -231,7 +258,64 @@ footer {
     }
 
     p {
-        max-width: 425px;
+        max-width: 430px;
         text-align: center;
     }
+}
+
+#datos-academicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        text-align: center;
+    }
+}
+
+#proyectos-objetivos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item-1 {
+    margin-left: 15px;
+    border-color: rgb(219, 136, 211);
+    border-style: dashed;
+    width: 435px;
+}
+
+.flex-item-2 {
+    margin: 0 35px;
+    border-color: rgb(219, 136, 211);
+    border-style: dashed;
+    width: 435px;
 }
