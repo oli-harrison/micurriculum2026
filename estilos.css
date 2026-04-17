@@ -67,6 +67,13 @@ header {
         font-family: 'Podkova regular', serif;
         font-size: 0.9rem;
         gap: 10px;
+
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            color: rgb(226, 107, 214);
+        }
     }
 
     h3 {
