@@ -145,7 +145,7 @@ p {
     line-height: 1.15rem;
     text-wrap-style: balance;
     padding: 10px;
-    max-width: 500px;
+    max-width: 535px;
 }
 
 /* esto es de la lista del final */
@@ -157,9 +157,24 @@ p {
     align-items: center;
     flex-wrap: wrap;
 
+
     ul {
         font-size: 0.9rem;
-        padding-left: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        list-style: none;
+
+        li {
+            background-color: rgba(150, 211, 143, 0.644);
+            border-radius: 10px;
+            height: 35px;
+            width: 190px;
+            text-align: center;
+            padding-top: 5px;
+            border: solid;
+            border-color: rgba(122, 170, 116, 0.87);;
+        }
     }
 }
 
@@ -269,7 +284,7 @@ footer {
     }
 }
 
-#proyectos-objetivos {
+#objetivos {
     display: flex;
     flex-direction: column;
     align-items: center;
