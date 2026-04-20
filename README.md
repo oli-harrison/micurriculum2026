@@ -1,0 +1,2 @@
+# Entrega TP1 - Curriculum - 1º cuatrimestre 2026
+Este trabajo consiste en el desarrollo y diseño de una página web en donde van a encontrar mi currículum. Cuenta con una sección principal donde hay información sobre mi, y otras secciones como datos académicos, experiencia laboral, mis objetivos, otros proyectos y mis habilidades. La página fue desarrollada con HTML y CSS en Visual Studio Code, con herramientas Flexbox para un diseño más flexible, y con un tamaño de pantalla de 1280x800px.
