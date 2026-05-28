@@ -37,7 +37,7 @@
 }
 
 /* selector universal */
-/* * {
+* {
     font-family: "Montserrat regular", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -46,176 +46,147 @@
     padding: 0;
     box-sizing: border-box;
 
-} */
+}
 
 body {
     background-color: #720000
 }
 
-/* aplicación al CV */
+/* esto es para los textos */
 
-/* inicio y portfolio */
+p {
+    font-family: 'Montserrat regular', sans-serif;
+    text-wrap-style: balance;
+    padding: 10px;
+    max-width: 535px;
+}
+
+/* aplicación al portfolio */
+
 
 header {
-    display: flex;
-    background-color: #590000;
-    padding: 8px 74px 8px 57px;
-    justify-content: space-between;
-    align-items: center;
+    nav {
+        background-color: #590000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 74px 8px 57px;
+        position: fixed;
+        width: 100%;
+    }
 
     .marca-personal {
         display: flex;
         align-items: center;
         gap: 50px;
 
+        img {
+            width: 43px;
+            height: 30px;
+        }
+
         h1 {
             color: #FFF;
-            font-family: Montserrat;
-            font-size: 14px;
-            font-style: normal;
+            font-size: 12px;
             font-weight: 500;
             line-height: 49px;
         }
     }
 
-    /*header nav {
-        display: flex;
-        width: 1789px;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 74px 8px 57px;*/
-
-
     #botones {
         display: flex;
-        align-items: center;
         gap: 35px;
         list-style: none;
-        margin: 0;
-        padding: 0;
     }
 
     #botones a {
         color: #FFF;
-        font-family: Montserrat regular;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 500;
         text-decoration: none;
     }
-}
 
-.contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    max-width: 1200px;
-}
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section {
-    width: 100%;
-}
-
-h2 {
-    font-family: 'Poppins Bold', sans-serif;
-    color: rgb(251, 176, 255);
-    font-size: 2.5rem;
-    text-align: center;
-    padding-top: 18px;
-}
-
-h3 {
-    font-family: 'Poppins Regular', sans-serif;
-    color: rgb(150, 211, 143);
-    font-size: 1.6rem;
-    line-height: 5rem;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    padding-left: 10px;
-}
-
-h4 {
-    font-family: 'Poppins Italic', sans-serif;
-    color: rgb(88, 47, 82);
-    font-size: 1.1rem;
-    line-height: 1.8rem;
-    padding: 10px;
-}
-
-h5 {
-    font-family: 'Poppins Light', sans-serif;
-    font-size: 0.9rem;
-    color: rgb(219, 136, 211);
-    line-height: 1.3rem;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-}
-
-/* esto es para los textos */
-
-p {
-    font-family: 'Podkova regular', serif;
-    font-size: 0.9rem;
-    line-height: 1.15rem;
-    text-wrap-style: balance;
-    padding: 10px;
-    max-width: 535px;
-}
-
-/* esto es de la lista del final */
-
-#habilidades {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-
-
-    ul {
-        font-size: 0.9rem;
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        list-style: none;
-
-        li {
-            background-color: rgba(150, 211, 143, 0.644);
-            border-radius: 10px;
-            height: 35px;
-            width: 190px;
-            text-align: center;
-            padding-top: 7px;
-            border: solid;
-            border-color: rgba(122, 170, 116, 0.87);
-            border-width: 2px;
-        }
+    #botones a:hover {
+        text-decoration: underline;
     }
 }
 
+/* pagina bienvenidos */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 40px 40px 40px;
+    min-height: 100vh;
+
+    #bienvenidos {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        margin-bottom: 60px;
+
+        h2 {
+            color: #FFF;
+            font-family: "MDLZ BITE TYPE";
+            font-size: 100px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        img {
+            width: 708px;
+            height: 341px;
+        }
+    }
+
+    a {
+        display: flex;
+        width: 271px;
+        height: 62px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        color: var(--bordo-base, #720000);
+        text-align: center;
+        font-family: "MDLZ BITE TYPE";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: transparent;
+        color: white;
+    }
+}
+
+
 footer {
     background-color: #590000;
-    /*padding: 10px;*/
+    display: flex;
+    width: 1920px;
+    height: 88px;
+    padding: 29px 52px 29px 59px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
     .contenedor {
         display: flex;
-        width: 1809px;
-        height: 30px;
         justify-content: space-between;
-        align-items: center;
+        width: 100vw;
 
-        p {
+
+        .catedra p {
             color: #FFF;
-            font-family: Montserrat regular;
             font-size: 12px;
             font-style: normal;
             font-weight: 400;
@@ -223,158 +194,14 @@ footer {
         }
 
         .redes {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+
             img {
-                width: 29px;
-                height: 29px;
-            }
-
-        }
-    }
-
-    #hero {
-        background-image: url(img/hero-compu-agenda.jpg);
-        background-position: 90%;
-        background-size: cover;
-        height: 30vh;
-        padding: 5px;
-        border-color: rgb(219, 136, 211);
-        border-style: solid;
-        border-top-width: 2px;
-        border-bottom-width: 2px;
-        border-left-width: 0;
-        border-right-width: 0;
-
-        h3 {
-            color: rgb(251, 176, 255);
-            line-height: 0.5rem;
-            font-size: 1.3rem;
-            margin-top: 8px;
-            text-align: center;
-        }
-    }
-
-    #degradado {
-        p {
-            font-family: 'Poppins Italic', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            line-height: 2.3rem;
-            max-width: 1200px;
-            color: rgb(84, 110, 82);
-        }
-
-        background: linear-gradient(91deg, rgb(196 253 189), rgb(255 202 250 / 85%));
-        padding: 20px;
-        min-height: 10vh;
-        margin: 45px;
-        border-radius: 100px;
-        max-width: 1200px;
-
-    }
-
-    #pattern {
-        background-image: url(img/fondo-trama-verde.png);
-        background-size: 100px;
-        margin: 30px 80px;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h3 {
-            line-height: 1rem;
-            color: rgb(90 119 87);
-            padding-bottom: 10px;
-        }
-
-        h4 {
-            text-align: center;
-        }
-
-        p {
-            max-width: 580px;
-            text-align: center;
-        }
-    }
-
-    #datos-academicos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        p {
-            text-align: center;
-        }
-    }
-
-    #objetivos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h3 {
-            margin-top: 40px;
-        }
-
-        p {
-            text-align: center;
-        }
-    }
-
-    #otros-proyectos {
-
-        h3 {
-            margin-top: 60px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
-        .flex-container-2 {
-            display: flex;
-            flex-direction: row;
-            align-items: baseline;
-            margin-bottom: 40px;
-            flex-wrap: wrap;
-            justify-content: center;
-
-            .flex-item-1,
-            .flex-item-2 {
-                margin-left: 15px;
-                width: 435px;
-                text-align: center;
-
-                p {
-                    margin-bottom: 10px;
-                }
+                width: 35px;
+                height: 35px;
             }
         }
     }
-
-    #experiencia-laboral {
-
-        h3 {
-            text-align: center;
-        }
-
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .flex-item-1 {
-            margin-left: 15px;
-            border-color: rgb(219, 136, 211);
-            border-style: dashed;
-            width: 435px;
-        }
-
-        .flex-item-2 {
-            margin: 0 35px;
-            border-color: rgb(219, 136, 211);
-            border-style: dashed;
-            width: 435px;
-        }
-    }
+}
