@@ -6,16 +6,17 @@
     <title>Mis proyectos</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="lightbox/jquery.fancybox.css">
 </head>
 
 <body>
-    <header>
+   <header>
         <nav>
-            <div class="marca-personal">
-                <img src="img/marca-personal.svg">
-                <h1>OLIVIA HARRISON</h1>
-            </div>
-
+        <div class="marca-personal">
+            <img src="img/svg/marca-personal.svg" width="43" height="30" alt="marca personal">
+            <h1>OLIVIA HARRISON</h1>
+        </div>
+        
             <ul id="botones">
                 <li>
                     <a href="index.html">INICIO</a>
@@ -40,33 +41,61 @@
         <section id="proyectos">
             <h3>MIS PROYECTOS</h3>
             <!-- galeria -->
-
+            <div id="galeria-proyectos">
+                <a href="img/fotos-galeria/proyecto-1.png" data-fancybox="gallery" data-caption="Proyecto 1 - Ocaso">
+                    <img src="img/fotos-galeria/proyecto-1-thumbnail.png" alt="Proyecto 1 - Ocaso" />
+                </a>
+                <a href="img/fotos-galeria/proyecto-2.png" data-fancybox="gallery" data-caption="Proyecto 3 - Type">
+                    <img src="img/fotos-galeria/proyecto-2-thumbnail.png" alt="Proyecto 2 - Desvelo" />
+                </a>
+                <a href="img/fotos-galeria/proyecto-3.png" data-fancybox="gallery" data-caption="Proyecto 3 - Type">
+                    <img src="img/fotos-galeria/proyecto-3-thumbnail.png" alt="Proyecto 3 - Type" />
+                </a>
+                <a href="img/fotos-galeria/proyecto-4.png" data-fancybox="gallery" data-caption="Proyecto 4 - Museo">
+                    <img src="img/fotos-galeria/proyecto-4-thumbnail.png" alt="Proyecto 4 - Museo" />
+                </a>
+                <a href="img/fotos-galeria/proyecto-5.png" data-fancybox="gallery" data-caption="Proyecto 5 - Smileys">
+                    <img src="img/fotos-galeria/proyecto-5-thumbnail.png" alt="Proyecto 5 - Smileys" />
+                </a>
+                <a href="img/fotos-galeria/proyecto-6.png" data-fancybox="gallery" data-caption="Proyecto 6 - Disco">
+                    <img src="img/fotos-galeria/proyecto-6-thumbnail.png" alt="Proyecto 6 - Disco" />
+                </a>
+                <a href="img/fotos-galeria/proyecto-7.png" data-fancybox="gallery" data-caption="Proyecto 7 - Libro salud mamaria">
+                    <img src="img/fotos-galeria/proyecto-7-thumbnail.png" alt="Proyecto 7 - Libro salud mamaria" />
+                </a>
+                 <a href="img/fotos-galeria/proyecto-8.png" data-fancybox="gallery" data-caption="Proyecto 8 - Libro mariposas">
+                    <img src="img/fotos-galeria/proyecto-8-thumbnail.png" alt="Proyecto 8 - Libro mariposas" />
+                </a>
+            </div>
             <!-- boton ver más -->
             <a href="indice.html" class="boton-ver-mas">VER MÁS</a>
 
             <!-- Reproducción de música -->
             <section class="audio">
                 <audio controls autoplay>
-                    <source src="audio/Billie Eilish - BIRDS OF A FEATHER (Official Music Video).mp3" type="audio/mp3">
+                    <source src="audio/billie-eilish-birds-of-a-feather.mp3" type="audio/mp3">
                 </audio>
                 <p>Billie Eilish - Birds of a feather</p>
             </section>
         </section>
     </main>
 
-    <footer>
+     <footer>
         <div class="contenedor">
-            <div class="catedra">
+            <article class="catedra">
                 <p>Cátedra Wiscñevsky, 2026</p>
                 <p>© 2026 Portfolio. Todos los derechos reservados.</p>
-            </div>
+            </article>
             <div class="redes">
-                <a href="#"><img src="img/logo-ig.svg" alt="Logo instagram" width="25" height="25" /></a>
+                <a href="#"><img src="img/svg/logo-ig.svg" alt="Logo instagram" width="25" height="25" /></a>
 
-                <a href="#"><img src="img/logo-facebook.svg" alt="Logo Facebook" width="25" height="25" /></a>
+                 <a href="#"><img src="img/svg/logo-facebook.svg" alt="Logo Facebook" width="25" height="25" /></a>
 
-                <a href="#"><img src="img/logo-behance.svg" alt="Logo tiktok" width="25" height="25" /></a>
+                 <a href="#"><img src="img/svg/logo-behance.svg" alt="Logo tiktok" width="25" height="25" /></a>
             </div>
-        </div>
+            </div>
     </footer>
+
+    <script src="lightbox/jquery.min.js"></script>
+    <script src="lightbox/jquery.fancybox.js"></script>
 </body>
