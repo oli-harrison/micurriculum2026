@@ -1,3 +1,3 @@
-# Entrega TP1 - Curriculum - 1º cuatrimestre 2026
+# Entrega TP3 - Portfolio - 1º cuatrimestre 2026
 Este trabajo consiste en el desarrollo y diseño de una página web en donde van a encontrar mi portfolio. Cuenta con una página de bienvenida, una con información sobre mi, una galería de mis proyectos, un índice que te direcciona a cada proyecto específico y un formulario de contacto. La página fue desarrollada con HTML y CSS en Visual Studio Code, con varias herramientas incluyendo Flexbox para un diseño más flexible, y con un tamaño de pantalla de 1280x800px.
 Link a figma: https://www.figma.com/design/pWPxaAndw3x3mE0pRVwHUE/tp-individual?node-id=19-2&t=JEgPZaqPpsdagcfV-1
