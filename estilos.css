@@ -83,7 +83,6 @@ header {
         h1 {
             color: #FFF;
             font-size: 12px;
-            font-weight: 500;
             line-height: 49px;
         }
     }
@@ -97,8 +96,6 @@ header {
     #botones a {
         color: #FFF;
         font-size: 12px;
-        font-style: normal;
-        font-weight: 500;
         text-decoration: none;
     }
 
@@ -107,7 +104,7 @@ header {
     }
 }
 
-/* pagina bienvenidos */
+
 main {
     display: flex;
     flex-direction: column;
@@ -117,6 +114,7 @@ main {
     padding: 100px 40px 40px 40px;
     min-height: 100vh;
 
+    /* pagina bienvenidos */
     #bienvenidos {
         display: flex;
         align-items: center;
@@ -127,9 +125,6 @@ main {
             color: #FFF;
             font-family: "MDLZ BITE TYPE";
             font-size: 100px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
         }
     }
 
@@ -143,12 +138,8 @@ main {
         background: #FFF;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
         color: var(--bordo-base, #720000);
-        text-align: center;
         font-family: "MDLZ BITE TYPE";
         font-size: 25px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
         text-decoration: none;
     }
 
@@ -163,38 +154,30 @@ main {
         background-size: cover;
         background-position: center;
         width: 100vw;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
         position: relative;
 
         .libreta {
-            background-image: url(img/libreta-papel3.png);
+            background-image: url(img/libreta-papel.png);
             background-size: cover;
-            height: 650px;
-            display: flex;
-            align-items: center;
-            box-sizing: border-box;
+            height: 890px;
+            width: 96%;
 
             .libreta-contenido {
-                padding: 50px 60px 50px 110px;
+                padding: 50px 60px 50px 210px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
                 height: 100%;
-                width: 100%;
 
                 .titulo {
                     display: flex;
                     align-items: center;
                     gap: 15px;
+                    margin-top: 40px;
 
                     h3 {
-                        color: #000;
                         font-family: Autography;
                         font-size: 150px;
-                        font-style: normal;
-                        font-weight: 400;
                         line-height: 1;
                     }
                 }
@@ -202,11 +185,9 @@ main {
                 /* Párrafos de texto */
                 .texto {
                     p {
-                        color: #000;
-                        font-size: 20px;
-                        line-height: 25px;
+                        font-size: 17px;
                         text-align: left;
-                        margin: 0 0 20px 10px;
+                        margin: 0 0 20px 15px;
                     }
                 }
 
@@ -235,9 +216,6 @@ main {
 
         /* ── Foto oli ── */
         .foto-oli {
-            display: flex;
-            align-items: flex-end;
-            margin-bottom: 0;
             position: absolute;
             right: 0;
             bottom: 0;
@@ -262,17 +240,14 @@ main {
             flex-wrap: wrap;
             justify-content: center;
             max-width: 1000px;
-            margin: 0 auto 50px auto;
 
             a {
 
                 width: 45%;
                 margin: 15px;
-                box-sizing: border-box;
 
                 img {
                     width: 100%;
-                    height: auto;
                     margin: 10px;
                 }
             }
@@ -288,12 +263,8 @@ main {
             background: #FFF;
             box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
             color: var(--bordo-base, #720000);
-            text-align: center;
             font-family: "MDLZ BITE TYPE";
             font-size: 25px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
             text-decoration: none;
             cursor: pointer;
             margin-bottom: 50px;
@@ -308,7 +279,6 @@ main {
         .audio {
             display: flex;
             flex-direction: column;
-            align-items: center;
             gap: 10px;
             align-self: flex-start;
 
@@ -316,16 +286,12 @@ main {
                 font-family: "MDLZ BITE TYPE";
                 font-size: 15px;
                 color: white;
-                font-weight: 400;
-                line-height: normal;
-                padding: 0;
             }
         }
     }
 
     /* pagina indice */
     #indice {
-        max-width: 1200px;
 
         .titulo-indice {
             display: flex;
@@ -338,9 +304,6 @@ main {
                 color: #FFF;
                 font-family: "MDLZ BITE TYPE";
                 font-size: 100px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
             }
         }
 
@@ -354,7 +317,6 @@ main {
         .item-categoria {
             display: flex;
             align-items: center;
-            justify-content: center;
             gap: 15px;
             height: 150px;
 
@@ -366,8 +328,6 @@ main {
 
             .boton-contenedor {
                 position: relative;
-                align-items: center;
-                justify-content: center;
                 width: 220px;
                 height: 100px;
 
@@ -382,6 +342,631 @@ main {
                     position: absolute;
                     left: 0;
                 }
+            }
+        }
+    }
+
+    #proyecto-ocaso {
+        background-image: url(img/branding-ocaso.png);
+        background-size: cover;
+        background-position: center right;
+        display: flex;
+        width: 100%;
+
+        .columna-papel {
+            background-image: url(img/hoja-papel.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+
+        .contenido-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: left;
+            margin-left: 40px;
+            width: 400px;
+            padding: 35px 5px 40px 30px;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-family: Autography;
+                    font-size: 64px;
+                    line-height: 10px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-family: "MDLZ BITE TYPE";
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .parrafos {
+            p {
+                font-size: 15px;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+        }
+
+        .flechas-navegacion {
+            display: flex;
+            gap: 335px;
+            margin-top: 10px;
+            padding-top: 15px;
+        }
+    }
+
+    #proyecto-desvelo {
+        background-image: url(img/branding-desvelo.png);
+        background-size: cover;
+        background-position: center right;
+        display: flex;
+        width: 100%;
+
+        .columna-papel {
+            background-image: url(img/hoja-papel.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+
+        .contenido-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: left;
+            margin-left: 40px;
+            width: 400px;
+            padding: 35px 5px 40px 30px;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-family: Autography;
+                    font-size: 64px;
+                    line-height: 10px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-family: "MDLZ BITE TYPE";
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .parrafos {
+            p {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+        }
+
+        .flechas-navegacion {
+            display: flex;
+            gap: 335px;
+            margin-top: 10px;
+            width: 35px;
+            height: auto;
+            padding-top: 15px;
+        }
+    }
+
+    #proyecto-type {
+        background-image: url(img/branding-type.png);
+        background-size: cover;
+        background-position: center right;
+        display: flex;
+        width: 100%;
+
+        .columna-papel {
+            background-image: url(img/hoja-papel.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+
+        .contenido-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: left;
+            margin-left: 40px;
+            width: 400px;
+            padding: 35px 5px 40px 30px;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-family: Autography;
+                    font-size: 64px;
+                    line-height: 10px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-family: "MDLZ BITE TYPE";
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .parrafos {
+            p {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+        }
+
+        .flechas-navegacion {
+            display: flex;
+            gap: 335px;
+            margin-top: 10px;
+            width: 35px;
+            height: auto;
+            padding-top: 15px;
+        }
+    }
+
+    #proyecto-museo {
+        background-image: url(img/social-media-museo.png);
+        background-size: cover;
+        background-position: center right;
+        display: flex;
+        width: 100%;
+
+        .columna-papel {
+            background-image: url(img/hoja-papel.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+
+        .contenido-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: left;
+            margin-left: 40px;
+            width: 400px;
+            padding: 35px 5px 40px 30px;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-family: Autography;
+                    font-size: 64px;
+                    line-height: 10px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-family: "MDLZ BITE TYPE";
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .parrafos {
+            p {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+        }
+
+        .flechas-navegacion {
+            display: flex;
+            gap: 335px;
+            margin-top: 10px;
+            width: 35px;
+            height: auto;
+            padding-top: 15px;
+        }
+    }
+
+    #proyecto-smileys {
+        background-image: url(img/packaging-smileys.png);
+        background-size: cover;
+        background-position: center right;
+        display: flex;
+        width: 100%;
+
+        .columna-papel {
+            background-image: url(img/hoja-papel.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+
+        .contenido-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: left;
+            margin-left: 40px;
+            width: 400px;
+            padding: 35px 5px 40px 30px;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-family: Autography;
+                    font-size: 64px;
+                    line-height: 10px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-family: "MDLZ BITE TYPE";
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .parrafos {
+            p {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+        }
+
+        .flechas-navegacion {
+            display: flex;
+            gap: 335px;
+            margin-top: 10px;
+            width: 35px;
+            height: auto;
+            padding-top: 15px;
+        }
+    }
+
+    #proyecto-disco {
+        background-image: url(img/packaging-disco.png);
+        background-size: cover;
+        background-position: center right;
+        display: flex;
+        width: 100%;
+
+        .columna-papel {
+            background-image: url(img/hoja-papel.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+
+        .contenido-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: left;
+            margin-left: 40px;
+            width: 400px;
+            padding: 35px 5px 40px 30px;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-family: Autography;
+                    font-size: 64px;
+                    line-height: 10px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-family: "MDLZ BITE TYPE";
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .parrafos {
+            p {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+        }
+
+        .flechas-navegacion {
+            display: flex;
+            gap: 335px;
+            margin-top: 10px;
+            width: 35px;
+            height: auto;
+            padding-top: 15px;
+        }
+    }
+
+    #proyecto-libro-mamas {
+        background-image: url(img/editorial-libro-mamas.png);
+        background-size: cover;
+        background-position: center right;
+        display: flex;
+        width: 100%;
+
+        .columna-papel {
+            background-image: url(img/hoja-papel.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+
+        .contenido-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: left;
+            margin-left: 40px;
+            width: 400px;
+            padding: 35px 5px 40px 30px;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-family: Autography;
+                    font-size: 64px;
+                    line-height: 10px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-family: "MDLZ BITE TYPE";
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .parrafos {
+            p {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+        }
+
+        .flechas-navegacion {
+            display: flex;
+            gap: 335px;
+            margin-top: 10px;
+            width: 35px;
+            height: auto;
+            padding-top: 15px;
+        }
+    }
+
+    #proyecto-libro-mariposas {
+        background-image: url(img/editorial-libro-infantil.png);
+        background-size: cover;
+        background-position: center right;
+        display: flex;
+        width: 100%;
+
+        .columna-papel {
+            background-image: url(img/hoja-papel.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center
+        }
+
+        .contenido-texto {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            text-align: left;
+            margin-left: 40px;
+            width: 400px;
+            padding: 35px 3px 40px 30px;
+
+            .titulo {
+                display: flex;
+                flex-direction: column;
+
+                h5 {
+                    font-family: Autography;
+                    font-size: 64px;
+                    line-height: 10px;
+                    margin-bottom: 15px;
+                }
+
+                h4 {
+                    font-family: "MDLZ BITE TYPE";
+                    font-size: 64px;
+                }
+            }
+        }
+
+        .parrafos {
+            p {
+                color: #000;
+                font-family: Montserrat;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 25px;
+                margin-top: 15px;
+            }
+        }
+
+        .flechas-navegacion {
+            display: flex;
+            gap: 335px;
+            margin-top: 10px;
+            width: 35px;
+            height: auto;
+            padding-top: 15px;
+        }
+    }
+
+    #contacto {
+        min-height: 100vh;
+        padding: 5px 8% 40px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 200px;
+
+        .titulo {
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            h2 {
+                color: rgba(255, 255, 255, 0.50);
+                font-size: 47px;
+            }
+
+            h3 {
+                color: #FFF;
+                font-family: Autography;
+                font-size: 110px;
+                line-height: 160px;
+                transform: rotate(-5.21deg);
+            }
+        }
+
+        /* ── Formulario ── */
+        form {
+            width: 48%;
+            max-width: 550px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            input,
+            select,
+            textarea {
+                background: transparent;
+                border: 2px solid #FFF;
+                border-radius: 20px;
+                padding: 16px 20px;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.50);
+                outline: none;
+                transition: border-color 0.3s;
+                box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+            }
+
+            input::placeholder,
+            textarea::placeholder {
+                color: rgba(255, 255, 255, 0.50);
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+            }
+
+            select {
+                appearance: none;
+                background-image: url(img/svg/flecha-desplegar.svg);
+                background-repeat: no-repeat;
+                background-position: right 20px center;
+                background-size: 18px;
+                cursor: pointer;
+            }
+
+            textarea {
+                min-height: 170px;
+            }
+
+            .boton {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+                background: transparent;
+                box-shadow: none;
+
+                .boton-enviar {
+                    color: #720000;
+                    font-family: 'Montserrat Bold', sans-serif;
+                    font-size: 16px;
+                    border: none;
+                    padding: 12px 40px;
+                    border-radius: 15px;
+                    cursor: pointer;
+                    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                    transition: background-color 0.3s, transform 0.2s;
+                }
+            }
+
+            .boton-enviar:hover {
+                transform: scale(1.02);
             }
         }
     }
@@ -416,6 +1001,99 @@ footer {
             img {
                 width: 35px;
                 height: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        nav {
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px 5%;
+            height: auto;
+
+            .marca-personal {
+                h1 {
+                    font-size: 12px;
+                }
+
+                img {
+                    width: 15%;
+                    height: 15%;
+                }
+            }
+
+            #botones {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+                padding: 0;
+
+                li a {
+                    font-size: 12px;
+                    padding: 5px 8px;
+                }
+            }
+        }
+    }
+
+    main {
+        padding: 150px 20px 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        #bienvenidos {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 25px;
+
+
+            h2 {
+                font-size: 60px;
+                margin: 0 0 15px 0;
+            }
+
+            img {
+                width: 70%;
+                height: auto;
+
+            }
+        }
+
+        .boton-descubri {
+            display: flex;
+            width: 150px;
+            height: 40px;
+            font-size: 15px;
+            margin: 15px auto 0 auto;
+            border-radius: 15px;
+        }
+    }
+
+
+    footer {
+        padding: 15px;
+
+        .contenedor {
+            .catedra p {
+                font-size: 9px;
+                margin: 0;
+                text-align: left;
+                justify-content: center;
+            }
+
+            .redes {
+                justify-content: center;
+                gap: 10px;
             }
         }
     }
